@@ -12,14 +12,14 @@ const TabsLayout = () => {
             screenOptions={{
                 headerShown: false,
 
-                tabBarActiveTintColor: 'red',
-                tabBarInactiveTintColor: 'green',
+                tabBarActiveTintColor: colors.primary,
+                tabBarInactiveTintColor: colors.textMuted,
                 // tabBarActiveBackgroundColor: 'black',
                 // tabBarInactiveBackgroundColor:'grey'
                 tabBarStyle: {
-                    backgroundColor: '#1e293b',
+                    backgroundColor: colors.surface,
                     borderTopWidth: 1,
-                    borderTopColor: 'yellow',
+                    borderTopColor: colors.border,
                     height: 90,
                     paddingBottom: 30,
                     paddingTop: 10,
