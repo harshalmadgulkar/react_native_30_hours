@@ -8,7 +8,7 @@ export const getTodos = query({
     }
 });
 
-export const addTodos = mutation({
+export const addTodo = mutation({
     args: { text: v.string() },
     handler: async (ctx, args) => {
         const todoId = await ctx.db.insert('todos', {
@@ -20,7 +20,7 @@ export const addTodos = mutation({
     }
 });
 
-export const toggleTodos = mutation({
+export const toggleTodo = mutation({
     args: { id: v.id('todos') },
     handler: async (ctx, args) => {
         const todo = await ctx.db.get(args.id);
